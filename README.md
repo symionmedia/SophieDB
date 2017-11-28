@@ -17,9 +17,9 @@ The SophieDB\Core consists of 3 types of functions:
 - Return functions:
     These functions return a value to the script that insantiated it. 
 
-Full API documentation @ docs.sophiedb.ga/V2 
-Trello Development board: https://trello.com/b/6LPRYUoi/sophiedb
-Github Repo: https://github.com/symionmedia/sophiedb
+- Full API documentation @ docs.sophiedb.ga/V2 
+- Trello Development board: https://trello.com/b/6LPRYUoi/sophiedb
+- Github Repo: https://github.com/symionmedia/sophiedb
 
 Features
 --------
@@ -53,13 +53,16 @@ Follow these steps to get going:
 
     - Copy the ZIP release to your webserver.
     - Unzip.
-    - Edit: ./SophieCore/user_db.json
-        - Add User to user_db.json:
+    - Edit: ./SophieCore/core.sophie
+        - Add User to users array;
             {
-                "USER": "",
+                "NAME": "",
+                "PASSWORD": "",
                 "KEY": "",
                 "TOKEN": "",
-                "DATABASE": ""
+                "BEARER": "",
+                "DATABASE": "",
+                "RIGHTS": ""
             }
     - Enjoy.
 
@@ -75,8 +78,8 @@ Contribute
 Support
 -------
 
-If you are having any issues, please let me know.
-Contact: issue@sophiedb.ga
+- If you are having any issues, please let me know.
+- Contact: issue@sophiedb.ga
 
 
 License
@@ -84,12 +87,3 @@ License
 
 SophieDB is licensed under the MIT license.
 
-
-
-
--------------------------------------------------------------
-API REFRENCE
--------------------------------------------------------------
-
-Baseurl:            https://sophiedb.ga/V2/
-Query format:       TYPE / DATABASE / (FUNCTION SPECIFIC VARIABLES)
