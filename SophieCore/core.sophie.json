@@ -1,0 +1,68 @@
+/**
+* SophieDB - JSON DATABASE API
+*
+* Core Config
+* ./SophieCore/core.json
+*
+* This is the core configuration file for SophieDB. 
+*
+* @package      SophieDB
+* @author       Corné de Jong <corne@cornedejong.net>
+* @version      0.2 {beta}
+* @link         http://get.sophiedb.ga/v2
+* @since        File Available since 12 november 2017
+* 
+*/
+
+{
+    "settings": {
+        /* the type of Authentication required */
+        "authMethod": "basic",
+        /* For what request functions does the user need to authorize */
+        "authZones": {
+            "get": {
+                "get": false,
+                "search": false
+            },
+            "post": {
+                "string": true,
+                "array": true
+            },
+            "options": {
+                "backup": true,
+                "create": true,
+                "unset": true
+            },
+            "delete": {
+                "database": true,
+                "table": true,
+                "key": true
+            }
+        },
+        /* Is there a daily request limit? False or integer */
+        "dailymaxrequest": false
+    },
+    "dbdata": [
+        {
+            "name": "",
+            "author": "",
+            "creationdate": "",
+            "asoccdata": {}
+        }
+    ],
+    /* Users Database */
+    /* If the basic auth mode is slected the user = KEY and pass = TOKEN */
+    "users": [
+        {
+            "NAME": "admin",
+            "PASSWORD": "R85IxZmM6Y",
+            "KEY": "M8lUgQ78sQ5oDlZaWgAy",
+            "TOKEN": "0zwN9y2MVgET1RixpfQ9hMAkwiHXwH9g",
+            "BEARER": "OsoOZqspXn4xx6WiE6Scn98fpoPCBimC",
+            /* Set the accessable databases for the user, all gives all access */
+            "DATABASE": "all",
+            /* Type of user. What can they access */
+            "ACCESSTYPE": "admin"
+        }
+    ]
+}
