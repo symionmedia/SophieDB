@@ -1,0 +1,10 @@
+{
+    "SophieDB": "New Database",
+    "Version": 2,
+    "content": {
+        "type": "Placeholder",
+        "sort": "dummy content",
+        "createdby": "SophieDB\\Core",
+        "interesting": false
+    }
+}

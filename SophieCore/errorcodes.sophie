@@ -1,0 +1,142 @@
+{
+    	"e0": {
+    		"errorcode": 0,
+    		"description": "Request was not in HTTPS",
+            "origin": "SophieCore->checkHTTPS()",
+            "message": "API only available on HTTPS!",
+            "http": "HTTP/1.1 400 Bad Request"
+    	},
+        "e1": {
+        	"errorcode": 1,
+            "description": "no database specified",
+            "origin": "SophieCore->getDatabase()",
+            "message": "No database selected!",
+            "http": "HTTP/1.1 400 Bad Request"
+        },
+        "e2": {
+        	"errorcode": 2,
+            "description": "database doesn\u2019t exist",
+            "origin": "SophieCore->getDatabase()",
+            "message": "Database '%s' doesn't exist!",
+            "http": "HTTP/1.1 400 Bad Request"
+        },
+        "e3": {
+        	"errorcode": 3,
+            "description": "api key isn\u2019t set",
+            "origin": "SophieCore->Auth()",
+            "message": "API Key header isn't set!",
+            "http": "HTTP/1.0 401 Unauthorized"
+        },
+        "e4": {
+        	"errorcode": 4,
+            "description": "api token isn\u2019t set",
+            "origin": "SophieCore->Auth()",
+            "message": "API Token header isn't set!",
+            "http": "HTTP/1.0 401 Unauthorized"
+        },
+        "e5": {
+        	"errorcode": 5,
+            "description": "incorrect api key",
+            "origin": "SophieCore->Auth()",
+            "message": "Incorrect API Key!",
+            "http": "HTTP/1.0 401 Unauthorized"
+        },
+        "e6": {
+        	"errorcode": 6,
+            "description": "incorrect api token",
+            "origin": "SophieCore->Auth()",
+            "message": "Incorrect API Token!",
+            "http": "HTTP/1.0 401 Unauthorized"
+        },
+        "e7": {
+        	"errorcode": 7,
+            "description": "post data empty",
+            "origin": "SophieCore->getPostBody()",
+            "message": "Post body is empty!",
+            "http": "HTTP/1.1 400 Bad Request"
+        },
+        "e8": {
+        	"errorcode": 8,
+        	"description": "post body is not json formatted",
+            "origin": "SophieCore->getPostBody()",
+            "message": "Post body is not JSON formatted! | %s.",
+            "http": "HTTP/1.1 400 Bad Request"
+        },
+        "e9": {
+        	"errorcode": 9,
+            "description": "request method not supported",
+            "origin": "SophieCore->requestHandler()",
+            "message": "Request method '%s' is not supported!",
+            "http": "HTTP/1.1 405 Method Not Allowed"
+        },
+        "e10": {
+        	"errorcode": 10,
+            "description": "No action specified",
+            "origin": "SophieCore->requestHandler()",
+            "message": "No action specified!",
+            "http": "HTTP/1.1 400 Bad Request"
+        },
+        "e11": {
+        	"errorcode": 11,
+            "description": "no database specified",
+            "origin": "SophieCore->createNewDatabase()",
+            "message": "No database name specified!",
+            "http": "HTTP/1.1 400 Bad Request"
+        },
+        "e12": {
+        	"errorcode": 12,
+            "description": "Error occurred while creating the database",
+            "origin": "SophieCore->createNewDatabase()",
+            "message": "An error occurred during the creation of '%s'!",
+            "http": "HTTP/1.1 304 Not Modified"
+        },
+        "e13": {
+        	"errorcode": 13,
+            "description": "Delete not confirmed",
+            "origin": "SophieCore->deleteDatabase()",
+            "message": "Please confirm your decision!",
+            "http": "HTTP/1.1 409 Conflict"
+        },
+        "e14": {
+        	"errorcode": 14,
+            "description": "Directory not found in database",
+            "origin": "SophieCore->databaseRequest()",
+            "message": "Directory '%s' not found in database '%s'!",
+            "http": "HTTP/1.1 400 Bad Request"
+        },
+        "e15": {
+        	"errorcode": 15,
+            "description": "An error occurred while saving to the database",
+            "origin": "SophieCore->postToDatabase()",
+            "message": "An error occurred while saving to the database!",
+            "http": "HTTP/1.1 304 Not Modified"
+        },
+        "e16": {
+        	"errorcode": 16,
+            "description": "An error occurred while locating the post location",
+            "origin": "SophieCore->postToDatabase()",
+            "message": "An error occurred while locationg the post location!",
+            "http": "HTTP/1.1 304 Not Modified"
+        },
+        "e17": {
+        	"errorcode": 17,
+            "description": "An error occurred while locating the post location",
+            "origin": "SophieCore->postToDatabase()",
+            "message": "An error occurred while adding your array to the database!",
+            "http": "HTTP/1.1 304 Not Modified"
+        },
+        "e18": {
+            "errorcode": 18,
+            "description": "there was no query passed to the search function, Check the query URI and/or the documentation",
+            "origin": "SophieCore->searchDatabase()",
+            "message": "No search query was given!",
+            "http": "HTTP/1.1 400 Bad Request"
+        },
+        "e19": {
+        	"errorcode": 19,
+            "description": "Database allready exists",
+            "origin": "SophieCore->createNewDatabase()",
+            "message": "The database '%s' already exists!",
+            "http": "HTTP/1.1 304 Not Modified"
+        }
+}

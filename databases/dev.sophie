@@ -1,0 +1,45 @@
+{
+    "testDB": true,
+    "content": {
+        "test": 12,
+        "data": [
+            "foo", "bar"
+        ]
+    },
+    "contacts": [
+        {
+            "name": {
+                "first": "John",
+                "last": "Doe",
+                "nick": "Jonny"
+            },
+            "birthday": "01-01-1970",
+            "email" : {
+                "private": "johndoe@example.com",
+                "work": "j.doe@company.com"
+            },
+            "phone": { 
+                "countrycode": "31",
+                "mobile": "0664781310",
+                "local": "0388610259"
+            },
+            "website": "www.example.com"
+        },
+        {
+            "firstname": "Tim",
+            "lastname": "Meijer",
+            "nickname": "Timmy",
+            "birthday": "01-01-1970",
+            "email" : {
+                "private": "timmeijer@example.com",
+                "work": "t.meijer@company.com"
+            },
+            "phone": { 
+                "countrycode": "31",
+                "mobile": "0645816121",
+                "local": "0385584268"
+            },
+            "website": "www.example.com"
+        }
+    ]
+}
