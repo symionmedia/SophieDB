@@ -1,6 +1,3 @@
-# sophiedb
-PHP based JSON database
-************
 SophieDB
 ========
 
@@ -11,15 +8,15 @@ RPC Service, powerd by YAR, is currently in developent.
 
 The SophieDB\Core consists of 3 types of functions:
 - Set functions:
-    These functions set values for variables.
+    - These functions set values for variables.
 - Print functions:
-    These functions print responses out to the user.
+    - These functions print responses out to the user.
 - Return functions:
-    These functions return a value to the script that insantiated it. 
+    - These functions return a value to the script that insantiated it. 
 
-- Full API documentation @ docs.sophiedb.ga/V2 
-- Trello Development board: https://trello.com/b/6LPRYUoi/sophiedb
-- Github Repo: https://github.com/symionmedia/sophiedb
+Full API documentation @ docs.sophiedb.ga/V2 
+Trello Development board: https://trello.com/b/6LPRYUoi/sophiedb
+Github Repo: https://github.com/symionmedia/sophiedb
 
 Features
 --------
