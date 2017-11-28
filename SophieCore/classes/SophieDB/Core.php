@@ -19,7 +19,7 @@
 *
 * @package      SophieDB
 * @author       Corné de Jong <corne@cornedejong.net>
-* @version      0.2
+* @version      0.1.2
 * @link         http://get.sophiedb.ga/v2
 * @since        File Available since 11 November 2017
 * 
