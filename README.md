@@ -1,6 +1,11 @@
 SophieDB
 ========
 
+** {**Beta**} **
+
+This is **not** a **finished** or **stable** version yet!
+
+
 SophieDB is an opensource JSON based database accessed by a RESTful API.
 Direct access to json files is currently prohibited by the .htacces file.
 
